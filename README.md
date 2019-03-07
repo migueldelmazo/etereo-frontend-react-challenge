@@ -21,9 +21,9 @@ El servidor habilita los endpoints:
 El servidor se basa en [Micro tasks](https://github.com/migueldelmazo/micro-tasks).
 Este sistema se definen las acciones a realizar por un endpoint en un array.
 
-De esta forma el endpoint http://localhost:3001/api/phones se define con las acciones del fichero [./server/endpoints/phones.js](./server/endpoints/phones.js).
+De esta forma el endpoint http://localhost:3001/api/phones se define con las acciones del fichero ./server/endpoints/phones.js.
 
-Para definir tareas personalizadas y que sean usadas por el endpoint se pueden definir como se hace en el fichero [./server/tasks/fakeSql.js](./server/endpoints/tasks.js)
+Para definir tareas personalizadas y que sean usadas por el endpoint se pueden definir como se hace en el fichero ./server/endpoints/tasks.js.
 
 Para este ejercicio se ha creado una base de datos llamada fakeSql que genera los datos solicitados bajo demanda.
 
