@@ -1,7 +1,7 @@
 const microTasks = require('micro-tasks')
 
 microTasks.hookRegister('microTasks.onTaskStart', (...args) => {
-  console.log('\033[2J-- Init endpoint')
+  console.log('---------- Init endpoint')
 })
 
 microTasks.hookRegister('microTasks.onActionEnd', (...args) => {

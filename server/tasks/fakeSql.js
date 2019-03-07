@@ -28,7 +28,7 @@ const getPhones = (payload) => {
     let idx = paginationCurrentPage * paginationSize;
     idx < paginationCurrentPage * paginationSize + paginationSize && idx < total;
     idx += 1
-    ) {
+  ) {
     phones.push(getPhone(idx, false))
   }
 
@@ -46,7 +46,7 @@ const getPhoneDetail = (payload) => {
   return getPhone(payload.params.id, true)
 }
 
-microTasks.methodRegister('fakeSql.query', function (query) {
+microTasks.methodRegister('fakeSql.query', function(query) {
   if (query.indexOf('SELECT id, img, model, price FROM phones') === 0) {
     if (this.queryParams.paginationCurrentPage === 3) {
       return microTasks.reject({
