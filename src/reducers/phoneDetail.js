@@ -30,13 +30,7 @@ const phoneDetail = (state = initialState, action) => {
         isValidData: true
       }
 
-    case actionTypes.TOGGLE_PHONE_DETAIL_ERROR:
-      return {
-        ...state,
-        error: !!action.status
-      }
-
-    case actionTypes.TOGGLE_PHONE_DETAIL_LOADING:
+    case actionTypes.SET_PHONE_DETAIL_LOADING:
       return {
         ...state,
         loading: !!action.status

@@ -7,7 +7,7 @@ export const hidePhoneDetail = () => ({
 
 export const getPhoneDetail = (id) => (dispatch) => {
   dispatch({
-    type: actionTypes.TOGGLE_PHONE_DETAIL_LOADING,
+    type: actionTypes.SET_PHONE_DETAIL_LOADING,
     status: true
   })
   dispatch({
@@ -33,7 +33,7 @@ export const getPhoneDetail = (id) => (dispatch) => {
     })
     .then(() => {
       dispatch({
-        type: actionTypes.TOGGLE_PHONE_DETAIL_LOADING,
+        type: actionTypes.SET_PHONE_DETAIL_LOADING,
         status: false
       })
     })
