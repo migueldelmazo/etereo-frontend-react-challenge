@@ -13,7 +13,7 @@ export const getPhones = (paginationCurrentPage = 0, paginationSize) => (dispatc
     status: true
   })
   dispatch({
-    type: actionTypes.TOGGLE_APP_ERROR,
+    type: actionTypes.SET_APP_ERROR_STATUS,
     status: false
   })
   api.getPhones(paginationCurrentPage, getPaginationSize(paginationSize, getState))
@@ -30,7 +30,7 @@ export const getPhones = (paginationCurrentPage = 0, paginationSize) => (dispatc
     })
     .catch(() => {
       dispatch({
-        type: actionTypes.TOGGLE_APP_ERROR,
+        type: actionTypes.SET_APP_ERROR_STATUS,
         status: true
       })
     })

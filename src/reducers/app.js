@@ -4,10 +4,10 @@ const initialState = {
   error: false,
 }
 
-const phones = (state = initialState, action) => {
+const app = (state = initialState, action) => {
   switch (action.type) {
 
-    case actionTypes.TOGGLE_APP_ERROR:
+    case actionTypes.SET_APP_ERROR_STATUS:
       return {
         ...state,
         error: !!action.status
@@ -18,4 +18,4 @@ const phones = (state = initialState, action) => {
   }
 }
 
-export default phones
+export default app

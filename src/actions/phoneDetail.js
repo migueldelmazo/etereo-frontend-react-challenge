@@ -11,7 +11,7 @@ export const getPhoneDetail = (id) => (dispatch) => {
     status: true
   })
   dispatch({
-    type: actionTypes.TOGGLE_APP_ERROR,
+    type: actionTypes.SET_APP_ERROR_STATUS,
     status: false
   })
   api.getPhoneDetail(id)
@@ -27,7 +27,7 @@ export const getPhoneDetail = (id) => (dispatch) => {
     })
     .catch(() => {
       dispatch({
-        type: actionTypes.TOGGLE_APP_ERROR,
+        type: actionTypes.SET_APP_ERROR_STATUS,
         status: true
       })
     })

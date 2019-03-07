@@ -1,6 +1,6 @@
 export default {
   // app
-  TOGGLE_APP_ERROR: 'TOGGLE_APP_ERROR',
+  SET_APP_ERROR_STATUS: 'SET_APP_ERROR_STATUS',
 
   // phones
   ADD_PHONES: 'ADD_PHONES',
