@@ -6,12 +6,12 @@ export default {
 
   getPhones: (paginationCurrentPage, paginationSize) => {
     return axios.get(host + '/api/phones', {
-        params: {
-          paginationCurrentPage,
-          paginationSize
-        }
-      })
-    .then((response) => response.data)
+      params: {
+        paginationCurrentPage,
+        paginationSize
+      }
+    })
+      .then((response) => response.data)
   },
 
   getPhoneDetail: (id) => {

@@ -3,13 +3,13 @@ import PropTypes from 'prop-types'
 
 const CatalogItems = ({ items, ItemComponent, onClickItem }) => (
   <ul className='catalog-items'>
-    {items.map(item =>
-      <ItemComponent
-        key={item.id}
-        {...item}
-        onClickItem={() => onClickItem(item.id)}
-      />
-    )}
+    { items.map(item => (
+        <ItemComponent
+          key={ item.id }
+          {...item}
+          onClickItem={ () => onClickItem(item.id) }
+        />
+      )) }
   </ul>
 )
 

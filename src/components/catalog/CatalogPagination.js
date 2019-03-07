@@ -30,17 +30,19 @@ const getPages = (pagination, onClickPage) => {
 const CatalogPagination = ({ pagination, onClickPage }) => (
   <div className='pagination-wrapper'>
     <ul className='pagination'>
-      {getPages(pagination, onClickPage).map(page =>
-        <li
-          className={'page-item ' + page.className}
-          key={page.id}
-        >
-          <button
-            className='page-link'
-            onClick={page.onClick}
-          >{page.label}</button>
-        </li>
-      )}
+      { getPages(pagination, onClickPage).map(page => (
+          <li
+            className={ 'page-item ' + page.className }
+            key={ page.id }
+          >
+            <button
+              className='page-link'
+              onClick={ page.onClick }
+            >
+              { page.label }
+            </button>
+          </li>
+        )) }
     </ul>
   </div>
 )

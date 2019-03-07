@@ -6,33 +6,29 @@ import './Catalog.css'
 
 const Catalog = ({ items, pagination, title, DetailComponent, ItemComponent, onClickItem, onClickPage }) => (
   <div className='container'>
-
     <div className='row'>
       <div className='col catalog-title'>
-        <h1>{title}</h1>
+        <h1>{ title }</h1>
       </div>
     </div>
-
     <div className='row'>
       <div className='col'>
         <CatalogItems
-          items={items}
-          ItemComponent={ItemComponent}
-          onClickItem={onClickItem}
+          items={ items }
+          ItemComponent={ ItemComponent }
+          onClickItem={ onClickItem }
         />
         <CatalogPagination
-          pagination={pagination}
-          onClickPage={onClickPage}
+          pagination={ pagination }
+          onClickPage={ onClickPage }
         />
       </div>
     </div>
-
     <div className='row'>
       <div className='col'>
         <DetailComponent />
       </div>
     </div>
-
   </div>
 )
 

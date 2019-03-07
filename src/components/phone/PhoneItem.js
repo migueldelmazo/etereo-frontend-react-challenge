@@ -3,15 +3,21 @@ import PropTypes from 'prop-types'
 import './PhoneItem.css'
 
 const PhoneItem = ({ img, model, price, onClickItem }) => (
-  <li className='catalog-item card clickable' onClick={onClickItem}>
-
-    <img className='card-img-top' src={img} alt={model} />
-
+  <li
+    className='catalog-item card clickable'
+    onClick={ onClickItem }
+  >
+    <img
+      className='card-img-top'
+      src={ img }
+      alt={ model }
+    />
     <div className='card-body'>
-      <h5 className='card-title'>{model}</h5>
-      <p className='card-text'>{price} &euro;</p>
+      <h5 className='card-title'>{ model }</h5>
+      <p className='card-text'>
+        { price } €
+      </p>
     </div>
-
   </li>
 )
 
