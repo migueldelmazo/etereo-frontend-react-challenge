@@ -1,21 +1,17 @@
 const microTasks = require('micro-tasks')
 
 const getPhone = (id, allFields) => {
-  return allFields
-    ? {
-      id: id,
-      description: 'Lorem ipsum ' + id,
-      img: 'http://localhost:3001/files/phone-' + id + '.jpg',
-      model: 'Phone ' + id,
-      price: parseInt(id) + .99,
-      screen: '6.' + id
-    }
-    : {
-      id: id,
-      img: 'http://localhost:3001/files/phone-' + id + '.jpg',
-      model: 'Phone ' + id,
-      price: parseInt(id) + .99
-    }
+  const phone = {
+    id: id + '',
+    img: 'http://localhost:3001/files/phone-' + id + '.jpg',
+    model: 'Phone ' + id,
+    price: parseInt(id) + .99
+  }
+  if (allFields) {
+    phone.description = 'Lorem ipsum ' + id
+    phone.screen = '6.' + id
+  }
+  return phone
 }
 
 const getPhones = (payload) => {
