@@ -5,6 +5,8 @@ Este es un ejercicio para crear un simple catálogo de teléfonos.
 ## How to
 
 Ejecutar `npm install` para instalar las dependencias del proyecto.
+Ejecutar `npm run format:js` para formatear el código del proyecto.
+Ejecutar `npm run lint:js` para pasar el linter al código del proyecto.
 
 ## Servidor
 

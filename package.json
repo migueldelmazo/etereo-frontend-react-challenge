@@ -19,7 +19,7 @@
     "axios": "^0.18.0",
     "cors": "^2.8.5",
     "express": "^4.16.4",
-    "micro-tasks": "git://github.com/migueldelmazo/micro-tasks.git#v0.1.0",
+    "micro-tasks": "git://github.com/migueldelmazo/micro-tasks.git#v0.1.1",
     "prop-types": "^15.6.1",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
