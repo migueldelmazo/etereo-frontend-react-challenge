@@ -19,7 +19,7 @@ require('./endpoints/phoneDetail')
 
 for (let path in endpoints) {
   console.log('Listen ' + path + ' with endpoints/' + endpoints[path] + '.js tasks')
-  app.get(path, function(req, res) {
+  app.get(path, (req, res) => {
     microTasks.taskRun(endpoints[path], {
       req,
       res
