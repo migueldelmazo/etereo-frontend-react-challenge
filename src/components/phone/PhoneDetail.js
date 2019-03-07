@@ -33,11 +33,11 @@ const PhoneDetail = ({ description, img, isValidData, model, price, screen, hide
             </div>
             <div className='row'>
               <div className='col-sm'>
-                <strong>Price:</strong>
+                <strong>Price:&nbsp;</strong>
                 { price } €
               </div>
               <div className='col-sm'>
-                <strong>Screen:</strong>
+                <strong>Screen:&nbsp;</strong>
                 { screen } inch
               </div>
               <div className='col-sm'>
