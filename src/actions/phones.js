@@ -9,7 +9,7 @@ const getPaginationSize = (paginationSize, getState) => {
 
 export const getPhones = (paginationCurrentPage = 0, paginationSize) => (dispatch, getState) => {
   dispatch({
-    type: actionTypes.TOGGLE_PHONES_LOADING,
+    type: actionTypes.SET_PHONES_LOADING,
     status: true
   })
   dispatch({
@@ -36,7 +36,7 @@ export const getPhones = (paginationCurrentPage = 0, paginationSize) => (dispatc
     })
     .then(() => {
       dispatch({
-        type: actionTypes.TOGGLE_PHONES_LOADING,
+        type: actionTypes.SET_PHONES_LOADING,
         status: false
       })
     })

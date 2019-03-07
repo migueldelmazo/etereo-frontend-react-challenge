@@ -2,7 +2,6 @@ import actionTypes from '../constants/actionTypes'
 
 const initialState = {
   items: [],
-  error: false,
   loading: false,
   pagination: {
     currentPage: 0,
@@ -25,13 +24,7 @@ const phones = (state = initialState, action) => {
         total: action.total
       }
 
-    case actionTypes.TOGGLE_PHONES_ERROR:
-      return {
-        ...state,
-        error: !!action.status
-      }
-
-    case actionTypes.TOGGLE_PHONES_LOADING:
+    case actionTypes.SET_PHONES_LOADING:
       return {
         ...state,
         loading: !!action.status
