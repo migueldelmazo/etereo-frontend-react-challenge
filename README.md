@@ -6,11 +6,9 @@ Este es un ejercicio para crear un simple catálogo de teléfonos.
 
 Ejecutar `npm install` para instalar las dependencias del proyecto.
 
-Ejecutar `npm run server-start` en una consola para arrancar el servidor.
-
-Ejecutar `npm run client-start` en otra consola para arrancar el cliente.
-
 ## Servidor
+
+Ejecutar `npm run server-start` en una consola para arrancar el servidor.
 
 El servidor habilita los endpoints:
 
@@ -28,3 +26,9 @@ Para definir tareas personalizadas y que sean usadas por el endpoint se pueden d
 Para este ejercicio se ha creado una base de datos llamada fakeSql que genera los datos solicitados bajo demanda.
 
 **Importante:** los endpoints http://localhost:3001/api/phones?paginationCurrentPage=3 y http://localhost:3001/api/phones/3 devuelven errores 500 para poder probar casos de error en el cliente.
+
+## Cliente
+
+Ejecutar `npm run client-start` en otra consola para arrancar el cliente.
+
+El cliente se sirve desde http://localhost:3000

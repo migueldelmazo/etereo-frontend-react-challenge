@@ -1,0 +1,10 @@
+.phone-detail {
+  display: block;
+  background: rgba(0, 0, 0, .7);
+}
+
+.phone-detail .img {
+  margin-bottom: 1rem;
+  width: 150px;
+  height: 300px;
+}

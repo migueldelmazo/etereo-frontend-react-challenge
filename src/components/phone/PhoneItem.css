@@ -1,0 +1,20 @@
+.catalog-items {
+  padding-left: 0;
+}
+
+.catalog-item {
+  display: inline-block;
+  margin: 0 1rem 1rem 0;
+  padding: 2rem;
+}
+
+.catalog-item.clickable:hover {
+  cursor: pointer;
+  border-color: #CCC;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.catalog-item .card-img-top {
+  width: 150px;
+  height: 300px;
+}
