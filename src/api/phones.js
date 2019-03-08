@@ -7,7 +7,9 @@ const checkResponsePhones = (phones) => {
   }
   let phonesLength = phones.length
   for (let idx = 0; idx < phonesLength; idx += 1) {
-    if (typeof phones[idx].id !== 'string' ||
+    if (phones[idx] === null ||
+      typeof phones[idx] !== 'object' ||
+      typeof phones[idx].id !== 'string' ||
       typeof phones[idx].img !== 'string' ||
       typeof phones[idx].model !== 'string' ||
       typeof phones[idx].price !== 'number') {
