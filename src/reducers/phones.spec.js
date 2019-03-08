@@ -5,19 +5,19 @@ describe('Phone detail reducers', () => {
   it('Check phones items on init', () => {
     expect(phones(undefined, {
       type: ''
-    }).items).toEqual([])
+    }).items).toStrictEqual([])
   })
 
   it('Check phones loading on init', () => {
     expect(phones(undefined, {
       type: ''
-    }).loading).toEqual(false)
+    }).loading).toStrictEqual(false)
   })
 
   it('Check phones pagination on init', () => {
     expect(phones(undefined, {
       type: ''
-    }).pagination).toEqual({
+    }).pagination).toStrictEqual({
       currentPage: 0,
       size: 4
     })
@@ -26,7 +26,7 @@ describe('Phone detail reducers', () => {
   it('Check phones total on init', () => {
     expect(phones(undefined, {
       type: ''
-    }).total).toEqual(0)
+    }).total).toStrictEqual(0)
   })
 
   it('Check items on add phones', () => {
@@ -40,7 +40,7 @@ describe('Phone detail reducers', () => {
       }],
       pagination: {}
     }).items)
-      .toEqual([{
+      .toStrictEqual([{
         id: '0',
         img: 'Img 0',
         model: 'Model 0',
@@ -57,7 +57,7 @@ describe('Phone detail reducers', () => {
         size: 2
       }
     }).pagination)
-      .toEqual({
+      .toStrictEqual({
         currentPage: 1,
         size: 2
       })
@@ -70,21 +70,21 @@ describe('Phone detail reducers', () => {
       pagination: {},
       total: 10
     }).total)
-      .toEqual(10)
+      .toStrictEqual(10)
   })
 
   it('Set phones loading to true', () => {
     expect(phones({}, {
       type: 'SET_PHONES_LOADING',
       status: true
-    }).loading).toEqual(true)
+    }).loading).toStrictEqual(true)
   })
 
   it('Set phones loading to false', () => {
     expect(phones({}, {
       type: 'SET_PHONES_LOADING',
       status: false
-    }).loading).toEqual(false)
+    }).loading).toStrictEqual(false)
   })
 
 })

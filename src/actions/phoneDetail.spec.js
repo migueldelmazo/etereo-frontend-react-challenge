@@ -4,7 +4,7 @@ describe('Phone detail actions', () => {
 
   it('addTodo should create ADD_TODO action', () => {
     expect(hidePhoneDetail())
-      .toEqual({
+      .toStrictEqual({
         type: 'HIDE_PHONE_DETAIL'
       })
   })
