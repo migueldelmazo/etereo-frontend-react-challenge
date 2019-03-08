@@ -16,7 +16,7 @@ export const getPhones = (paginationCurrentPage = 0, paginationSize) => (dispatc
     type: actionTypes.SET_APP_ERROR_STATUS,
     status: false
   })
-  api.getPhones(paginationCurrentPage, getPaginationSize(paginationSize, getState))
+  return api.getPhones(paginationCurrentPage, getPaginationSize(paginationSize, getState))
     .then((response) => {
       dispatch({
         type: actionTypes.ADD_PHONES,

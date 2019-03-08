@@ -14,7 +14,7 @@ export const getPhoneDetail = (id) => (dispatch) => {
     type: actionTypes.SET_APP_ERROR_STATUS,
     status: false
   })
-  api.getPhoneDetail(id)
+  return api.getPhoneDetail(id)
     .then((response) => {
       dispatch({
         type: actionTypes.SET_PHONE_DETAIL,
