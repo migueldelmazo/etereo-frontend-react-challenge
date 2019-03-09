@@ -20,7 +20,9 @@ Se han cargado 22 teléfonos en una base de datos fake.
 ## Instalación y comandos de utilidad
 
 Ejecutar `npm install` para instalar las dependencias del proyecto.
+
 Ejecutar `npm run format:js` para formatear el código del proyecto.
+
 Ejecutar `npm run lint:js` para pasar el linter al código del proyecto.
 
 ## Tests
@@ -65,9 +67,9 @@ Ejecutar `npm run webapp-start` en otra consola para arrancar la webapp que se s
 
 Los componentes React de la webapp son:
 
-* /components/app: componentes genéricos del proyecto.
-* /componests/catalog: componentes genéricos para un catálogo que puede ser usado en cualquier proyecto. El componente `PhoneListContainer` solicitado en el enunciado de la prueba se ha renonbrado a `Catalog.js`.
-* /components/phone: componentes propios de este proyecto. El componente `PhoneDetailComponent` solicitado en el enunciado de la prueba se ha renonbrado a `PhoneDetail.js`.
+* `/components/app`: componentes genéricos del proyecto.
+* `/componests/catalog`: componentes genéricos para un catálogo que puede ser usado en cualquier proyecto. El componente `PhoneListContainer` solicitado en el enunciado de la prueba se ha renonbrado a `Catalog.js`.
+* `/components/phone`: componentes propios de este proyecto. El componente `PhoneDetailComponent` solicitado en el enunciado de la prueba se ha renonbrado a `PhoneDetail.js`.
 
 ## Evaluación de la prueba
 
