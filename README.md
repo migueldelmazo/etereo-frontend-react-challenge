@@ -1,6 +1,6 @@
 # Etereo frontend react challenge
 
-Este es un ejercicio para crear un simple catálogo de teléfonos de acuerdo con las instrucciones de https://gitlab.com/etereo/frontend-react-challenge.
+Este es un ejercicio para crear un simple catálogo de teléfonos de acuerdo con las instrucciones de `./STATEMENTS.md`.
 
 Se han creado las entidades:
 
