@@ -13,10 +13,11 @@ const checkResponsePhoneDetail = (phoneDetail) => {
   }
 }
 
+// manages /api/phones/:id endpoint
 export const getPhoneDetail = (id) => {
   return axios.get(constants.API_HOST + '/api/phones/' + id)
     .then((response) => {
-      // the api is the only data entry point of the entire app, check the data
+      // the api is the only data entry point of the entire app, checks all the data
       checkResponsePhoneDetail(response.data)
       return response.data
     })

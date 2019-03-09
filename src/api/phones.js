@@ -36,6 +36,7 @@ const checkResponseTotal = (total) => {
   }
 }
 
+// manages /api/phones endpoint
 export const getPhones = (paginationCurrentPage, paginationSize) => {
   return axios.get(constants.API_HOST + '/api/phones', {
     params: {
@@ -44,7 +45,7 @@ export const getPhones = (paginationCurrentPage, paginationSize) => {
     }
   })
     .then((response) => {
-      // the api is the only data entry point of the entire app, check the data
+      // the api is the only data entry point of the entire app, checks all the data
       checkResponsePhones(response.data.phones)
       checkResponsePagination(response.data.pagination)
       checkResponseTotal(response.data.total)

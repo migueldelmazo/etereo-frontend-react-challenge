@@ -1,5 +1,6 @@
 const microTasks = require('micro-tasks')
 
+// returns phone data with some or all the fields
 const getPhone = (id, allFields) => {
   const phone = {
     id: id + '',
@@ -14,6 +15,7 @@ const getPhone = (id, allFields) => {
   return phone
 }
 
+// returns a phones array, pagination and total for /phones endpoint
 const getPhones = (payload) => {
   const phones = []
   const total = 22
@@ -38,12 +40,16 @@ const getPhones = (payload) => {
   }
 }
 
+// returns a phone for /phones/:id endpoint
 const getPhoneDetail = (payload) => {
   return getPhone(payload.params.id, true)
 }
 
+// this is a fake SQL that generates the data on demand
 microTasks.methodRegister('fakeSql.query', function(query) {
+  // query for /phones endpoint
   if (query.indexOf('SELECT id, img, model, price FROM phones') === 0) {
+    // if current page is 3 we simulate an error to see it in web app
     if (this.queryParams.paginationCurrentPage === 3) {
       return microTasks.reject({
         err: 'A 500 error has been forced when paginationCurrentPage is "3"'
@@ -53,7 +59,9 @@ microTasks.methodRegister('fakeSql.query', function(query) {
     }
   }
 
+  // query for /phones/:id endpoint
   if (query.indexOf('SELECT * FROM phones') === 0) {
+    // if phone id is 3 we simulate an error to see it in web app
     if (this.params.id === '3') {
       return microTasks.reject({
         err: 'A 500 error has been forced when phone id is "3"'

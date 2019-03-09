@@ -7,6 +7,7 @@ const getPaginationSize = (paginationSize, getState) => {
     : paginationSize
 }
 
+// get phone list from api
 export const getPhones = (paginationCurrentPage = 0, paginationSize) => (dispatch, getState) => {
   dispatch({
     type: actionTypes.SET_PHONES_LOADING,

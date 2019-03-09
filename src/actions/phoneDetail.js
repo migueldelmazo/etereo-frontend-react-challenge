@@ -5,6 +5,7 @@ export const hidePhoneDetail = () => ({
   type: actionTypes.HIDE_PHONE_DETAIL
 })
 
+// get a phone detail from api
 export const getPhoneDetail = (id) => (dispatch) => {
   dispatch({
     type: actionTypes.SET_PHONE_DETAIL_LOADING,

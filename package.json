@@ -32,9 +32,7 @@
     "format:js": "./node_modules/.bin/esformatter -i --config .formatrc 'src/**/*.js' 'server/**/*.js'",
     "lint:js": "./node_modules/.bin/eslint --no-ignore ./src/*.js ./server/*.js",
     "server-start": "node ./server/index.js",
-    "client-start": "react-scripts start",
-    "build": "react-scripts build",
-    "eject": "react-scripts eject",
+    "webapp-start": "react-scripts start",
     "test": "react-scripts test --env=node --coverage",
     "test:debug": "react-scripts --inspect-brk test --runInBand --no-cache"
   },
