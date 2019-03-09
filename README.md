@@ -1,6 +1,6 @@
 # Etereo frontend react challenge
 
-Este es un ejercicio para crear un simple catálogo de teléfonos de acuerdo con las instrucciones de `./STATEMENTS.md`.
+Este es un ejercicio para crear un simple catálogo de teléfonos de acuerdo con las instrucciones de `./STATEMENTS.md` de la empresa etereo.io.
 
 Se han creado las entidades:
 
